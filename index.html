@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Quote Generator</title>
+</head>
+<body>
+  <h1 id="quote">Click the button for a quote!</h1>
+  <button onclick="newQuote()">New Quote</button>
+
+<script>
+const quotes = [
+  "Believe in yourself!",
+  "Code is poetry.",
+  "Stay curious.",
+  "Every day is a chance to learn."
+];
+
+function newQuote() {
+  document.getElementById("quote").innerText = quotes[Math.floor(Math.random() * quotes.length)];
+}
+</script>
+</body>
+</html>
